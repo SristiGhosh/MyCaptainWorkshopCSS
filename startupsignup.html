@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bottomnav.css">
+    <title>December workshop</title>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+div.personal{
+  position: absolute;
+  background-color: rgb(45, 166, 223);
+  color: white;
+  padding: 14px 20px;
+  margin-top: 50px;
+  margin-left: 110px;
+  margin-right: 970px;
+  opacity: 0.9;
+}
+div.personal:hover{
+    background: rgb(27, 111, 150);
+}
+div.investment{
+  position: absolute;
+  background-color: rgb(40, 154, 207);
+  color: white;
+  padding: 14px 20px;
+  margin-top: 50px;
+  margin-left: 328px;
+  opacity: 0.9;
+}
+div.investment:hover{
+    background: rgb(27, 111, 150);
+}
+div.personalize{
+  position: absolute;
+  background-color: rgb(45, 166, 223);
+  color: white;
+  padding: 14px 20px;
+  margin-top: 50px;
+  margin-left: 555px;
+  opacity: 0.9;
+}
+div.personalize:hover{
+    background: rgb(27, 111, 150);
+}
+div.left{
+  position: absolute;
+  margin-left: 80px;
+  margin-top: 140px;
+  width: 700px;
+  height: 400px;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  box-sizing: border-box;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+div.a {
+  position: absolute;
+  left: 80px;
+  width: 350px;
+  height: 600px;
+  margin-top: 140px;
+  margin-left: 760px;
+  background: rgb(44, 162, 218);
+  color: white;
+  border-radius: 25px;
+} 
+</style>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="logo.png" alt="logo" width="100" height="50" style="margin-left: 100px; margin-top: 5px; margin-bottom: 5px; float:left; display: inline-block;"></a>
+            <ul class="menu">
+            <li style="float:left; font-size: 17px;"><a href="invest.html">INVEST</a></li>
+            <li style="float:left; font-size: 17px;"><a href="getfunded.html">GET FUNDED</a></li>
+            <li style="float:left; font-size: 17px;"><a href="stockmarket.html">STOCK MARKET</a></li>
+            <li style="float:right; margin-right:100px; font-size: 15px;" id="rcorners3"  ><a href="signup.html">SIGN UP</a></li>
+            <li style="float: right; margin-right: -10px;"><a></a></li>
+            <li style="float:right;  font-size:15px;" id="rcorners3"><a href="signin.html">SIGN IN</a></li>
+        </nav>
+        </ul>
+    </header>
+    <div class="personal">
+        <li><a style="color: white; text-decoration: none;" href="#">Personal Profile</a></button>
+    </div>
+    <div class="investment">
+        <li><a style="color: white; text-decoration: none;" href="#">Fundings Profile</a></button>
+    </div>
+    <div class="personalize">
+        <li><a style="color: white; text-decoration: none;" href="#">Personalize Profile</a></button>
+    </div>
+<div class="left">
+<form action="/action_page.php" style="border:1px solid #ccc">
+  <div class="container">
+    <label for="name"><b> Name</b></label>
+    <input type="text" placeholder="Enter Your Name" name="name" required>
+
+    <label for="startupname"><b>Startup name</b></label>
+    <input type="text" placeholder="Enter your StartUp name" name="startupname" required>
+
+    <label for="webURL"><b>Website/App URL </b></label>
+    <input type="text" placeholder="Enter your Website/App URL" name="webURL">
+
+    <label for="linkedin"><b>Linkedin URL</b></label>
+    <input type="text" placeholder="Enter Linkedin" name="linkedin" required>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="sector"><b>Which Sector is your StartUp operating in?</b></label>
+    <input type="text" placeholder="Enter Sector eg- Advertising, AI, Aeronautical etc" name="sector" required>
+
+    <label for="stage"><b>Which Stage is your StartUp at?</b></label>
+    <input type="text" placeholder="Eg:Idea Stage,Proof of Concept,Beta Launched,Early Traction,Steady Revenue" name="email" required>
+
+    <label for="city"><b>Which City do you operate in</b></label>
+    <input type="text" placeholder="Enter City" name="city" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label>
+    
+    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+    <div class="clearfix">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn">Sign Up</button>
+    </div>
+  </div>
+</form>
+</div>
+<div class="a">
+    <br><br><br>
+    <p style="text-align:center; font-family: sans-serif; font-size: 25px;">How it works?</p>
+    <p style="text-align:center; font-family: sans-serif; font-size: 15px padding-left:20px;padding-right: 20px;">Get Started:</p>
+    <p style="text-align:center; font-family: sans-serif; font-size: 15px; padding-left:20px;padding-right: 20px;">Sign-up on Thriv, explore our Investors & Funds</p>
+    <p style="text-align:center; font-family: sans-serif; font-size: 15px; padding-left:20px;padding-right: 20px;">'Like' the ones that interest you themost</p>
+    <p style="text-align:center; font-family: sans-serif; font-size: 15px; padding-left:20px;padding-right: 20px;">Attend pitch calls</p>
+    <p style="text-align:center; font-family: sans-serif; font-size: 15px; padding-left:20px;padding-right: 20px;">Connect with the founders & leadinvestors</p>
+    <p style="text-align:center; font-family: sans-serif; font-size: 15px; padding-left:20px;padding-right: 20px;">Invest in stock markets</p>
+    <p style="text-align:center; font-family: sans-serif; font-size: 15px; padding-left:20px;padding-right: 20px;">Post funding:</p>
+    <p style="text-align:center; font-family: sans-serif; font-size: 15px; padding-left:20px;padding-right: 20px;">Use the Fundings Dashboard to track fundings</p>
+    <p style="text-align:center; font-family: sans-serif; font-size: 15px; padding-left:20px;padding-right: 20px;">Receive quarterly reports & unitstatements of your funds</p>
+    <p style="text-align:center; font-family: sans-serif; font-size: 15px; padding-left:20px;padding-right: 20px;">You will get yearly valuation reports</p>
+</div>
+<div class="navbar" style="position:relative; margin-top: 1250px;">
+    <a href="#About">About Us</a>
+    <a href="#team">Team</a>
+    <a href="#investor">Investor</a>
+    <a href="#contactus">Contact Us</a>
+    <a href="#statups">Startups</a>
+</div>
+</body>
+</html>

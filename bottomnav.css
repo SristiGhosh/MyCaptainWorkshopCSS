@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .navbar {
+    background-color:rgba(245, 245, 245, 0.945);
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .navbar a {
+    float:none;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .navbar a:hover {
+    background: #c9c3c39a;
+    color: black;
+  }
+  
+  .navbar a.active {
+    background-color: #c9c3c39a;
+    color: rgb(0, 0, 0);
+  }
+  
+  .main {
+    padding: 16px;
+    margin-bottom: 30px;
+  }
